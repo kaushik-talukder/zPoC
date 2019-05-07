@@ -1,10 +1,15 @@
 package stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import lombok.Data;
+
+@Data
 class Product {
 	int id;
 	String name;
@@ -43,6 +48,24 @@ public class ParallelStream {
 		//System.out.println(p);
 		
 		System.out.println(productPriceMap);
+		
+		Comparator<Product> comp = Comparator.comparing(Product::getName).reversed();
+		
+		productsList = productsList.stream().sorted(comp).collect(Collectors.toList());
+		
+		Iterator<Product> it = productsList.iterator();
+		while(it.hasNext()) {
+			Product p = it.next();
+			switch (p.getName()) {
+			case "HP":
+				System.out.println("I am inside case HP");
+				break;
+	
+			default:
+				System.out.println("I am at default");
+				break;
+			}
+		}
 
 	}
 }
