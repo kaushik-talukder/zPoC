@@ -1,4 +1,4 @@
-package algorithm;
+package poc.algorithm;
 
 @FunctionalInterface
 public interface B extends A {

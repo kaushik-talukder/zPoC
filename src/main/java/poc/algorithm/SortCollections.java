@@ -1,4 +1,4 @@
-package algorithm;
+package poc.algorithm;
 
 import java.io.File;
 import java.util.Arrays;

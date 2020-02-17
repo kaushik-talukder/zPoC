@@ -1,4 +1,4 @@
-package algorithm;
+package poc.algorithm;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

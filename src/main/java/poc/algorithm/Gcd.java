@@ -1,4 +1,4 @@
-package algorithm;
+package poc.algorithm;
 
 public class Gcd {
 
