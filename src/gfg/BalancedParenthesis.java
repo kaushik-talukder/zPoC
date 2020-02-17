@@ -53,7 +53,7 @@ public class BalancedParenthesis {
 	}
 
 	public static void main(String[] args) {
-		String exp = "){[]}{}()";
+		String exp = "{[]}{}()";
 		System.out.println(isBalancedExpression(exp));
 	}
 }
