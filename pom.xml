@@ -2,19 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<!-- Model version is the version of project descriptor your POM conforms to. It needs to be included and is set. The value 4.0.0 just indicated that it is compatible Maven 3.  -->
 	<modelVersion>4.0.0</modelVersion>
+	
+	<!-- Parent section allows us to specify which artifact is the parent of our POM. And we do so by specifying the fully qualified artifact name of the parent POM. With this setup, our module can now inherit some of the properties of our parent POM -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
+	<!-- A POM requires that its groupId, artifactId, and version be configured. These three values form the project's fully qualified artifact name. This is in the form of <groupId>:<artifactId>:<version>. As for the example below, its fully qualified artifact name is "com.example:poc:1.0" -->
 	<groupId>com.example</groupId>
 	<artifactId>poc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
+	
 	<name>poc</name>
 	<description>Demo project for Spring Boot</description>
 
+	<!-- Any field of the model that is a single value element can be referenced as a variable. For example, ${java.version}, ${project.version}, ${project.build.sourceDirectory} and so on -->
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
