@@ -1,6 +1,5 @@
 package com.example.poc.poc.algorithm;
 
-import java.io.File;
 import java.util.Arrays;
 
 public class SortCollections {
