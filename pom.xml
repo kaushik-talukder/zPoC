@@ -22,7 +22,7 @@
 	This is in the form of <groupId>:<artifactId>:<version>. 
 	As for the example below, its fully qualified artifact name is "com.example:poc:1.0" -->
 	<groupId>com.example</groupId>
-	<artifactId>poc</artifactId>
+	<artifactId>zpoc</artifactId>
 	<version>1.0</version>
 	
 	<name>poc</name>
