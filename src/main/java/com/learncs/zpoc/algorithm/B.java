@@ -1,4 +1,4 @@
-package com.learncs.zpoc.poc.algorithm;
+package com.learncs.zpoc.algorithm;
 
 @FunctionalInterface
 public interface B extends A {

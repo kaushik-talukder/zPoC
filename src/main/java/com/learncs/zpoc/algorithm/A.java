@@ -1,4 +1,4 @@
-package com.learncs.zpoc.poc.algorithm;
+package com.learncs.zpoc.algorithm;
 
 public interface A {
 	//void print();

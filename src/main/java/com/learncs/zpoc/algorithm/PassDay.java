@@ -1,4 +1,4 @@
-package com.learncs.zpoc.poc.algorithm;
+package com.learncs.zpoc.algorithm;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
