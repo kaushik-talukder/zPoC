@@ -20,8 +20,8 @@
 	<!-- A POM requires that its groupId, artifactId, and version be configured. 
 	These three values form the project's fully qualified artifact name. 
 	This is in the form of <groupId>:<artifactId>:<version>. 
-	As for the example below, its fully qualified artifact name is "com.example:poc:1.0" -->
-	<groupId>com.example</groupId>
+	As for the example below, its fully qualified artifact name is "com.learncs:zpoc:1.0" -->
+	<groupId>com.learncs</groupId>
 	<artifactId>zpoc</artifactId>
 	<version>1.0</version>
 	
