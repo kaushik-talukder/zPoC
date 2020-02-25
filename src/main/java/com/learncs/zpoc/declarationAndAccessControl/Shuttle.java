@@ -1,4 +1,4 @@
-package declarationAndAccessControl;
+package com.learncs.zpoc.declarationAndAccessControl;
 
 /*
 
