@@ -1,18 +1,31 @@
 package com.learncs.zpoc.anagram;
 
+import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class AnagramEx {
 
-	boolean checkAnagram(String orinigal, String test) {
-		Map<Character, Long> originalMap = orinigal.chars().mapToObj(c -> (char) c).collect(Collectors.toList()).stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		Map<Character, Long> testMap = test.chars().mapToObj(c -> (char) c).collect(Collectors.toList()).stream()
-				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		System.out.println(originalMap);
-		System.out.println(testMap);
-		return originalMap.equals(testMap);
+	boolean checkAnagram(String a, String b) {
+		Map<Character, Integer> s1 = new HashMap<>();
+        Map<Character, Integer> s2 = new HashMap<>();
+
+        for(int i=0; i< a.length(); i++){
+            if(s1.containsKey(a.charAt(i))){
+                s1.put(a.charAt(i), s1.get(a.charAt(i))+1);
+            }else {
+                s1.put(a.charAt(i), 0);
+            }
+        }
+
+        for(int i=0; i< b.length(); i++){
+            if(s2.containsKey(b.charAt(i))){
+                s2.put(b.charAt(i), s2.get(b.charAt(i))+1);
+            }else {
+                s2.put(b.charAt(i), 0);
+            }
+        }
+
+        return s1.equals(s2);
 	}
 
 	public static void main(String[] args) {
